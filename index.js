@@ -1,6 +1,9 @@
 const express = require('express');
 const db = require('./db');
 const app = express();
+require('dotenv').config()
+
+const PORT  = process.env.PORT || 3001
 
 app.use(express.json());
 
@@ -15,6 +18,6 @@ app.use('/person',personRoutes)
 const menuRoutes = require('./Routes/menuRoutes')
 app.use('/menuitem',menuRoutes)
 
-app.listen(3001,()=>{
+app.listen(PORT,()=>{
     console.log('Server is running on port 3001');
 })
