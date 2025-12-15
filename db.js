@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // mongoose.connect('mongodb://localhost:27017/hotels')
-mongoose.connect('mongodb+srv://HelloWorld:Qwerty123@hotels.hlm9zho.mongodb.net/')
+mongoose.connect('mongodb+srv://helloworld:Qwerty12345@hotels.pjaadz7.mongodb.net/')
 
 const db = mongoose.connection;
 
